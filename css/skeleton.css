@@ -206,15 +206,24 @@ body {
 }
 
 .cardHome {
-    box-shadow: 0.4em 0.3em rgb(26, 26, 26);
-    border-radius: 0.4em 0.3em #0000005b;
-    box-shadow: 0.3em 0.4em #070707b4;
-    margin-top: 15em;
+    box-shadow: 0.3em 0.4em 0.5em 0.25em #1414145e, 0.3em -0.3em 3em 0.1em #2e2e2e27, -0.2em -0.2em 2em 0.1em #ffffffc9;
+    /* border-radius: 0.4em 0.3em #0000005b;
+   */
+    text-shadow: 1em 1em 1em 0.2em #1EAEDB;
+    border-inline-width: 2em, 2em, 2em, 2em;
+    border-inline-color: #0a0a0a;
+    margin-top: 2em;
+    width: 25vw;
+    max-width: 100%;
+    height: 25vh;
+    max-height: 100%;
 }
 
 .nav {
+    padding: 1em;
     background-color: #1313131a;
     text-shadow: 0.2em 0.4em 1em #3d3d3d;
+    text-size-adjust: true;
     max-width: 100%;
     font-size: 1.5rem;
     /* currently ems cause chrome bug misinterpreting rems on body element */
