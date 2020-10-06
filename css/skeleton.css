@@ -180,46 +180,103 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
                     }
                     
                     body {
-                        background-color: #d0d2d8;
+                        background-color: #f5efef;
                         font-size: 1.5em;
                         /*currentlyemscausechromebugmisinterpretingremsonbodyelement*/
                         line-height: 1.6;
                         font-weight: 100;
                         /* box-shadow: 1em 1em #070707b4;
     */
-                        font-family: "Montserrat 500", "DM Sans", "Montserrat", sans-serif;
+                        font-family: "DM Sans", "Roboto", sans-serif;
                         /*font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     */
                         color: #222;
+                    }
+                    
+                    @keyframes example {
+                        from {
+                            background-color: red;
+                        }
+                        to {
+                            background-color: yellow;
+                        }
+                    }
+                    /* The element to apply the animation to */
+                    
+                    body#bg {
+                        width: 100px;
+                        height: 100px;
+                        background-color: red;
+                        animation-name: example;
+                        animation-duration: 4s;
+                    }
+                    
+                    .viewportheader {
+                        position: relative;
+                        height: 100vh;
+                        text-align: center;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    
+                    video {
+                        object-fit: cover;
+                        width: 100vw;
+                        height: 100vh;
+                        position: fixed;
+                        top: 0;
+                        left: 0;
                     }
                     
                     #cardHome.body {
                         text-size-adjust: true;
                     }
                     
+                    .text {
+                        padding: 1.5rem 1rem 1.5rem 1.2rem;
+                    }
+                    
+                    #text {
+                        /*box-shadow: 0.3em 0.4em 0.5em 0.5em #131313;
+                    */
+                        color: white;
+                    }
+                    
+                    background-color {
+                        color: red;
+                    }
+                    
                     #cardHome {
-                        box-shadow: 0.3em 0.4em 0.5em 0.25em #1414145e, 0.3em -0.3em 3em 0.1em #2e2e2e27, -0.2em -0.2em 1.5em 0.3em #ffffffe7;
-                        /* border-radius: 0.4em 0.3em #0000005b;
-   */
+                        border-radius: 0.3rem;
+                        box-shadow: 2em 3em 4em 0.2em #3131318c, 0.3em -0.3em 3em 0.1em #2e2e2e00, -0.9em -0.2em 1.5em 0.2em #ffffffc9;
+                        /*border-radius: 0.4em 0.3em #0000005b;
+                        */
                         background-color: #1313131a;
-                        margin-top: 2em;
+                        margin-top: 1.5em;
                         width: 20em;
                         max-width: 100%;
                         height: auto;
                         max-height: 100%;
+                        text-size-adjust: true;
+                        -webkit-border-radius: 0.3rem;
+                        -moz-border-radius: 0.3rem;
+                        -ms-border-radius: 0.3rem;
+                        -o-border-radius: 0.3rem;
                     }
                     
                     .nav {
                         padding: 1em;
                         background-color: #c0c0c0a4;
-                        box-shadow: 0.3em 0.4em 0.5em 0.25em #1414145e, 0.3em -0.3em 3em 0.1em #2e2e2e27, -0.2em -0.2em 1.5em 0.3em #ffffffe7;
+                        box-shadow: 0.3em 0.4em 0.5em 0.25em #1414145e, 0.3em -0.3em 3em 0.9em #2e2e2e27, 0.3em -0.3em 20em 1em #4e4e4ecb, -0.2em -0.2em 1.5em 0.3em #ffffffe7;
                         text-size-adjust: true;
                         max-width: 100%;
                         font-size: 1.5rem;
                         /* currently ems cause chrome bug misinterpreting rems on body element */
-                        line-height: 1.2;
-                        font-weight: 300;
-                        font-family: "Raleway Sans 300", "DM Sans", "Montserrat", sans-serif;
+                        line-height: 1;
+                        justify-content: baseline;
+                        font-weight: 100;
+                        font-family: "Raleway Sans", "DM Sans", "Montserrat", sans-serif;
                         color: #222;
                     }
                     /* Typography
@@ -564,11 +621,19 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
                     /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
                     
-                    hr {
+                    hr.dark {
                         margin-top: 3rem;
                         margin-bottom: 3.5rem;
                         border-width: 0;
                         border-top: 1px solid #E1E1E1;
+                    }
+                    
+                    hr {
+                        margin-top: 1rem;
+                        margin-bottom: 1.5rem;
+                        border-bottom-color: #f3ecec;
+                        border-width: 0.2rem;
+                        border-top: 0.4rem solid #8d8d9783;
                     }
                     /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
