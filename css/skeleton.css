@@ -194,19 +194,22 @@ html {
 body {
     background-color: #d0d2d8;
     font-size: 1.5em;
-    /* currently ems cause chrome bug misinterpreting rems on body element */
+    /*currentlyemscausechromebugmisinterpretingremsonbodyelement*/
     line-height: 1.6;
     font-weight: 300;
+    /* box-shadow: 1em 1em #070707b4;
+    */
     font-family: "Montserrat 300", "DM Sans", "Montserrat", sans-serif;
-    /* font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  */
+    /*font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    */
     color: #222;
 }
 
 .cardHome {
     box-shadow: 0.4em 0.3em rgb(26, 26, 26);
-    border-radius: 20px 20px #000000;
-    margin-top: 5%;
+    border-radius: 0.4em 0.3em #0000005b;
+    box-shadow: 0.3em 0.4em #070707b4;
+    margin-top: 15em;
 }
 
 .nav {
@@ -216,7 +219,7 @@ body {
     font-size: 1.5rem;
     /* currently ems cause chrome bug misinterpreting rems on body element */
     line-height: 1.2;
-    font-weight: 300;
+    font-weight: 200;
     font-family: "Raleway Sans 300", "DM Sans", "Montserrat", sans-serif;
     /*  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
    */
